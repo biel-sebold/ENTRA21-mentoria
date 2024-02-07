@@ -51,3 +51,9 @@ switch(dia){
         console.log("Valor Inválido")    
         
 }
+
+function calcular(){
+    let valor1 = document.getElementById("primeirovalor").value;
+    let valor2 = document.getElementById("segundovalor").value;
+    const option = document.querySelector("input[name='option']:checked");
+}

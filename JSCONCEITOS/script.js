@@ -53,7 +53,25 @@ switch(dia){
 }
 
 function calcular(){
-    let valor1 = document.getElementById("primeirovalor").value;
-    let valor2 = document.getElementById("segundovalor").value;
-    const option = document.querySelector("input[name='option']:checked");
+    let valor1 = Number(document.getElementById("primeirovalor").value)
+    let valor2 = Number(document.getElementById("segundovalor").value)
+    const option = document.querySelector("input[name='option']:checked").value;
+
+    if((valor1 >=0 && valor1 <=100) && (valor2 >=0 && valor2 <=100)){
+        switch (option){
+           case "+":
+            document.getElementById("resultado").innerHTML = valor1 + valor2
+            break;
+           case "-":
+            document.getElementById("resultado").innerHTML = valor1 - valor2
+            break; 
+           case "*":
+            document.getElementById("resultado").innerHTML = valor1 * valor2
+            break; 
+           case "/": 
+           document.getElementById("resultado").innerHTML = valor1 / valor2
+        }
+    }else{
+        alert("Digite valores válidos");
+    }    
 }

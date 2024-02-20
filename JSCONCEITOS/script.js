@@ -95,8 +95,44 @@ for(let cont = 0; cont< 10; cont++) {
 }
 */
 
-let anos = [2020, 2021, 2022]
+let anos = [[2000, 2001, 2002], 
+            [2010, 2011, 2012], 
+            [2020, 2021, 2022]]
 
-for(let i = 0; i < anos.length; i++){
-    console.log(anos[i])
+for(let linha = 0; linha < anos.length; linha++) {
+    for(let coluna = 0; coluna < anos[0].length; coluna++){
+        console.log(anos[linha][coluna])
+    }
+}
+
+for(let i in anos){
+    console.log(i)
+}
+
+let pessoa = {
+    nome: 'Davi',
+    telefone: '470000000',
+    exibirInfo() {
+        console.log("Nome: " + this.nome + " " + "Telefone" + this.telefone)
+    }
+}
+
+
+let pessoas = [
+    {
+        nome: 'Davi',
+        telefone: '470000000', 
+    },
+    {
+        nome: 'João',
+        telefone: '470000000',
+    },
+    {
+        nome: 'Maria',
+        telefone: '470000000'
+    },
+];
+
+for(let i = 0; i < pessoas.length, i++){
+    console.log(pessoas[i].nome);
 }

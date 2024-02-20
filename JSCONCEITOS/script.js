@@ -22,7 +22,7 @@ const dbpass = "123"
 */
 
 //Estruturas condicionais
-
+/*
 let nota = 8
 
 if (nota>=7){
@@ -42,7 +42,7 @@ switch(dia){
         console.log("Domingo")
         break;
     case 2:
-        console.log("Segund-Feira")
+        console.log("Segunda-Feira")
         break;
     case 3:
         console.log("Terça-Feira")
@@ -74,4 +74,29 @@ function calcular(){
     }else{
         alert("Digite valores válidos");
     }    
+}
+*/
+
+/* LAÇOS DE REPETIÇÃO */
+/*
+let cont = 0
+
+do{
+    console.log("JavaScript!")
+    cont++
+}while(cont < 10)
+
+while(cont < 10){
+    console.log("JavaScript!")
+    cont++
+}
+for(let cont = 0; cont< 10; cont++) {
+    console.log("JavaScript") 
+}
+*/
+
+let anos = [2020, 2021, 2022]
+
+for(let i = 0; i < anos.length; i++){
+    console.log(anos[i])
 }
